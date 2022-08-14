@@ -1,5 +1,6 @@
 import { Text,StyleSheet } from 'react-native'
 import React from 'react'
+import { pinkColor } from '../constants/colors';
 
 
 function Title(props){
@@ -11,8 +12,8 @@ const styles = StyleSheet.create({
     textStyle: {
      fontSize: 24,
      marginTop: 20,
-     marginBottom:5,
-     color: '#CC0066',
+     marginBottom:15,
+     color: pinkColor,
      fontWeight: '150',
     },
   });

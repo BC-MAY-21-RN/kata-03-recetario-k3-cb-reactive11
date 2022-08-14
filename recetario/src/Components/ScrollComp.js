@@ -6,36 +6,20 @@ import Title from "./Title";
 const ScrollComp = () => {
   return (
     <>
-    <Title titulo="TRENDING" />
-    <ScrollView horizontal={true} > 
-      <FoodComp />
-      <FoodComp />
-      <FoodComp />
-      <FoodComp />
-      <FoodComp />
-      <FoodComp />
-      <FoodComp />
-      <FoodComp />
-      <FoodComp />
-      <FoodComp />
-      <FoodComp />
-      <FoodComp />
-      <FoodComp />
-    </ScrollView>
+      <Title titulo="TRENDING" />
+      <ScrollView horizontal={true} > 
+        <FoodComp uri='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' foodName='Peperoni Pizza Pockets'/>
+        <FoodComp uri='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' foodName='Peperoni Pizza Pockets'/>
+        <FoodComp uri='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' foodName='Peperoni Pizza Pockets'/>
+        <FoodComp uri='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' foodName='Peperoni Pizza Pockets'/>
+        <FoodComp uri='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' foodName='Peperoni Pizza Pockets'/>
+
+      </ScrollView>
     </>
 
   );
 };
 const styles = StyleSheet.create({
-  container: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    backgroundColor: "gray",
-    borderRadius: "5px",
-    marginHorizontal: 45,
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-  },
+ 
 });
 export default ScrollComp;
