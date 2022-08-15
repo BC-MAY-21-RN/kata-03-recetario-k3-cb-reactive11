@@ -3,6 +3,7 @@ import React from 'react'
 import SearchBar from '../Components/SearchBar'
 import ScrollComp from '../Components/ScrollComp'
 import Title from '../Components/Title'
+import RecentComp from '../Components/RecentComp'
 
 
 
@@ -11,6 +12,7 @@ const HomeScreen = () => {
     <View>
       <SearchBar />
       <ScrollComp />
+      <RecentComp />
     </View>
   )
 }

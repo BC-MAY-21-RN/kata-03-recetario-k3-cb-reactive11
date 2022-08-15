@@ -8,12 +8,22 @@ const ScrollComp = () => {
     <>
       <Title titulo="TRENDING" />
       <ScrollView horizontal={true} > 
-        <FoodComp uri='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' foodName='Peperoni Pizza Pockets'/>
-        <FoodComp uri='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' foodName='Peperoni Pizza Pockets'/>
-        <FoodComp uri='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' foodName='Peperoni Pizza Pockets'/>
-        <FoodComp uri='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' foodName='Peperoni Pizza Pockets'/>
-        <FoodComp uri='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' foodName='Peperoni Pizza Pockets'/>
-
+      <FoodComp 
+        link='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' 
+        foodName='Peperoni Pizza Pockets'
+        size="small"/>
+      <FoodComp 
+        link='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' 
+        foodName='Peperoni Pizza Pockets'
+        size="small"/>
+      <FoodComp 
+        link='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' 
+        foodName='Peperoni Pizza Pockets'
+        size="small"/>
+      <FoodComp 
+        link='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' 
+        foodName='Peperoni Pizza Pockets'
+        size="small"/>
       </ScrollView>
     </>
 
