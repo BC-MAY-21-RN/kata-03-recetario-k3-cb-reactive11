@@ -2,28 +2,23 @@ import { View, Text, SafeAreaView, TextInput, StyleSheet,ScrollView } from "reac
 import React from "react";
 import FoodComp from "./FoodComp";
 import Title from "./Title";
+import recipes from "../../assets/data/recipes.json"
 
 const ScrollComp = () => {
   return (
     <>
       <Title titulo="TRENDING" />
       <ScrollView horizontal={true} > 
-      <FoodComp 
-        link='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' 
-        foodName='Peperoni Pizza Pockets'
-        size="small"/>
-      <FoodComp 
-        link='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' 
-        foodName='Peperoni Pizza Pockets'
-        size="small"/>
-      <FoodComp 
-        link='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' 
-        foodName='Peperoni Pizza Pockets'
-        size="small"/>
-      <FoodComp 
-        link='https://png.pngtree.com/png-clipart/20190517/original/pngtree-homemade-pizza-png-image_4235039.png' 
-        foodName='Peperoni Pizza Pockets'
-        size="small"/>
+        {recipes.map((data,key)=>{
+            return(
+            <FoodComp 
+            link={data.photo} 
+            foodName={data.name}
+            size="small"
+            key={key}/>
+            )
+        })}
+        
       </ScrollView>
     </>
 
