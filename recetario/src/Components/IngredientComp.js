@@ -12,7 +12,7 @@ const IngredientComp = ({name, quantity}) => {
         <Text style={styles.text}>
             {quantity}
         </Text>
-        </View>
+      </View>
     </View>
   )
 }
@@ -20,14 +20,15 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: "row",
         justifyContent: 'space-between',
-        borderBottomColor: 'white',
-        borderBottomWidth: 1, 
-        margin:10,
+          borderBottomColor: 'white',
+          borderBottomWidth: .2, 
+          marginBottom:12,
+          marginHorizontal:15,
     },
     text: {
-        fontSize: 20,
+        fontSize: 18,
         color: 'white',
-        padding:10,
+        padding:15,
     },
 })
 

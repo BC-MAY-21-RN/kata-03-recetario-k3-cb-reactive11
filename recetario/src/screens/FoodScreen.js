@@ -1,4 +1,4 @@
-import {StyleSheet,ScrollView,Text} from "react-native";
+import {StyleSheet,ScrollView,Text,View} from "react-native";
 import React from "react"
 import FoodHeaderComp from "../Components/FoodHeaderComp";
 import FoodDescripcion from "../Components/FoodDescripcion";
@@ -9,10 +9,7 @@ const FoodScreen = () => {
     <>
       <FoodHeaderComp/>
       <FoodDescripcion/>
-      
-      
     </>
-
   );
 };
 const styles = StyleSheet.create({

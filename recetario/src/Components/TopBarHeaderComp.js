@@ -1,16 +1,16 @@
 import { View, Text, SafeAreaView, TextInput, StyleSheet } from "react-native";
 import React from "react";
-import { FontAwesome, Feather } from "@expo/vector-icons";
+import { FontAwesome, Feather, MaterialCommunityIcons,MaterialIcons } from "@expo/vector-icons";
 import { greyColor } from "../constants/colors";
 
 const TopBarHeaderComp = () => {
   return (
       <View style={styles.container}>
         
-        <FontAwesome style={styles.lupa} name="close" size={25} color="white"/>
+        <MaterialCommunityIcons  style={styles.lupa} name="window-close" size={30} color="white"/>
         <View style={styles.rightContainer}>
-            <Feather name="share" size={24} color="white" style={{paddingRight:10}}/>
-            <FontAwesome name="heart-o" size={20} color="white"/>
+            <MaterialIcons name="ios-share" size={26} color="white" style={{paddingRight:15}}/>
+            <FontAwesome name="heart-o" size={25} style={{paddingTop:3}} color="white"/>
         </View>
       </View>
   );
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
   rightContainer:{
     flexDirection: "row",
   }
+  
 
 });
 export default TopBarHeaderComp;

@@ -13,7 +13,7 @@ export default function App() {
 
     <View style={styles.container}>
       {/* <HomeScreen /> */}
-      <FoodScreen />
+      <FoodScreen/>
     </View>
     
   );

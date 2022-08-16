@@ -12,18 +12,24 @@ const FoodDescripcion = () => {
 
 
   return (
-    <View>
-      <Text style={styles.textTitle}>Ingredients</Text>
-      <Text style={styles.textTitle}>for 3 servings</Text>
+    <View style={{paddingBottom:40}}>
+      <View style={styles.container}>
+        <Text style={styles.textTitle}>Ingredients</Text>
+        <Text style={styles.textTitle}>for 3 servings</Text>
+      </View>
       <FlatList data={ingredients} renderItem={item} />
     </View>
   )
 }
 const styles = StyleSheet.create({
     textTitle: {
-        fontSize: 20,
+        fontSize: 22,
         color: 'white',
-        padding:5,
+        paddingBottom:5,
+    },
+    container:{
+      paddingLeft:15,
+      marginBottom:10,
     },
 })
 

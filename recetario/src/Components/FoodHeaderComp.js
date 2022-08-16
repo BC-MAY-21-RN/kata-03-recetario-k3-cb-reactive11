@@ -3,12 +3,12 @@ import { ImageBackground, View, Text, Image,StyleSheet} from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 import FoodDescripcion from "./FoodDescripcion"; 
 import TopBarHeaderComp from "./TopBarHeaderComp";
-import { backgroundColor } from "../constants/colors";
+import { backgroundColor,whiteColor } from "../constants/colors";
 
 const FoodHeaderComp = () => {
     let image ={uri:'https://img.freepik.com/free-photo/tortilla-wrap-with-falafel-fresh-salad-vegan-tacos-vegetarian-healthy-food_2829-6193.jpg' } 
     let name = 'Peperoni Pizza'
-    let type = 'Trending'
+    let type = 'TRENDING'
   return (
     <View style={styles.Background}>
         <ImageBackground source={image}  resizeMode="cover">
@@ -18,7 +18,6 @@ const FoodHeaderComp = () => {
             <Text style={styles.textType}> {type} </Text>
             <Text style={styles.textName}>{name}</Text>
         </View>
-        
 
         </ImageBackground>  
         
@@ -27,19 +26,23 @@ const FoodHeaderComp = () => {
 }
 const styles = StyleSheet.create({
     textType: {
-        fontSize: 30,
-        color: 'white',
+        fontSize: 24,
+        color: whiteColor,
         paddingTop:180,
+        paddingLeft:8,
     },
     textName: {
         fontSize: 35,
-        color: 'white',
+        color: whiteColor,
+        paddingLeft:15,
+        paddingBottom:30,
     },
     image:{
         backgroundColor:"#000000c0"
     },
     Background:{
         backgroundColor:backgroundColor,
+        marginBottom:15,
     },
 });
 export default FoodHeaderComp
