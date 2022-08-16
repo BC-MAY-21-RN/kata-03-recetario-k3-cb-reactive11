@@ -1,14 +1,15 @@
 import {StyleSheet,ScrollView,Text} from "react-native";
 import React from "react"
 import FoodHeaderComp from "../Components/FoodHeaderComp";
+import FoodDescripcion from "../Components/FoodDescripcion";
 
 const FoodScreen = () => {
     
   return (
     <>
       <FoodHeaderComp/>
-      <Text>Food Screen</Text>
-      <Text>Food Screen</Text>
+      <FoodDescripcion/>
+      
       
     </>
 
