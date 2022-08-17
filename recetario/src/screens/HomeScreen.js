@@ -4,12 +4,13 @@ import SearchBar from '../Components/SearchBar'
 import ScrollComp from '../Components/ScrollComp'
 import RecentComp from '../Components/RecentComp'
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
+  
   return (
     <View>
       <SearchBar />
-      <ScrollComp />
-      <RecentComp />
+      <ScrollComp navigation={navigation}/>
+      <RecentComp navigation={navigation}/>  
     </View>
   )
 }

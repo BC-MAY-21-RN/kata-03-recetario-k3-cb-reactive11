@@ -3,12 +3,13 @@ import React from "react"
 import FoodHeaderComp from "../Components/FoodHeaderComp";
 import FoodDescripcion from "../Components/FoodDescripcion";
 
-const FoodScreen = () => {
+const FoodScreen = ({navigation}) => {
+  //console.log(navigation);
     
   return (
     <>
-      <FoodHeaderComp/>
-      <FoodDescripcion/>
+      <FoodHeaderComp navigation={navigation}/>
+      <FoodDescripcion />
     </>
   );
 };

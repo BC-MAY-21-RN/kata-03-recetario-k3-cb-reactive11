@@ -5,7 +5,7 @@ import FoodDescripcion from "./FoodDescripcion";
 import TopBarHeaderComp from "./TopBarHeaderComp";
 import { backgroundColor,whiteColor } from "../constants/colors";
 
-const FoodHeaderComp = () => {
+const FoodHeaderComp = ({navigation}) => {
     let image ={uri:'https://img.freepik.com/free-photo/tortilla-wrap-with-falafel-fresh-salad-vegan-tacos-vegetarian-healthy-food_2829-6193.jpg' } 
     let name = 'Peperoni Pizza'
     let type = 'TRENDING'
@@ -14,14 +14,11 @@ const FoodHeaderComp = () => {
         <ImageBackground source={image}  resizeMode="cover">
        
         <View style={styles.image}>
-            <TopBarHeaderComp/>
+            <TopBarHeaderComp navigation={navigation}/>
             <Text style={styles.textType}> {type} </Text>
             <Text style={styles.textName}>{name}</Text>
         </View>
-
         </ImageBackground> 
-       
-        
     </View>
   )
 }
