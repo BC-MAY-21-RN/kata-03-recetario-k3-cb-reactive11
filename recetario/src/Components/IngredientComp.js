@@ -4,7 +4,7 @@ import {  View, Text, Image,StyleSheet} from "react-native";
 
 const IngredientComp = ({name, quantity}) => {
   return (
-    <View>
+
       <View style={styles.container}>
         <Text style={styles.text}>
             {name}
@@ -13,7 +13,7 @@ const IngredientComp = ({name, quantity}) => {
             {quantity}
         </Text>
       </View>
-    </View>
+   
   )
 }
 const styles = StyleSheet.create({
