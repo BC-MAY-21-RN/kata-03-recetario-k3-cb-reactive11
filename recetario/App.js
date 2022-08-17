@@ -14,18 +14,16 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName='home'>
-        <Stack.Screen name="home" component={HomeScreen} />
-        <Stack.Screen name="food" component={FoodScreen} />
-        <Stack.Screen name="scroll" component={ScrollComp} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    
+      <NavigationContainer>
+        <Stack.Navigator  initialRouteName='home' screenOptions={{headerShown: false}}>
+          <Stack.Screen name="home" component={HomeScreen} />
+          <Stack.Screen name="food" component={FoodScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
 
-    // <View style={styles.container}>
-    //   {/* <HomeScreen /> */}
-    //   <FoodScreen/>
-    // </View>
+ 
+    
     
   );
 }
