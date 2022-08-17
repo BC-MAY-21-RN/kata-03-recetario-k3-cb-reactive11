@@ -7,9 +7,7 @@ import recipes from "../../assets/data/recipes.json"
 const FoodDescripcion = () => {
 
   const ingredients = recipes[0].ingredients
-
   const item = ({item}) => <IngredientComp name={item.name} quantity={item.quantity}/>
-
 
   return (
    <>
