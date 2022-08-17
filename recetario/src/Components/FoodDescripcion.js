@@ -12,13 +12,13 @@ const FoodDescripcion = () => {
 
 
   return (
-    <View style={{paddingBottom:40}}>
+   <>
       <View style={styles.container}>
         <Text style={styles.textTitle}>Ingredients</Text>
         <Text style={styles.textTitle}>for 3 servings</Text>
       </View>
       <FlatList data={ingredients} renderItem={item} />
-    </View>
+    </>
   )
 }
 const styles = StyleSheet.create({
