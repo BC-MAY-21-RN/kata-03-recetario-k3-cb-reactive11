@@ -19,7 +19,8 @@ const FoodHeaderComp = () => {
             <Text style={styles.textName}>{name}</Text>
         </View>
 
-        </ImageBackground>  
+        </ImageBackground> 
+       
         
     </View>
   )
@@ -44,5 +45,14 @@ const styles = StyleSheet.create({
         backgroundColor:backgroundColor,
         marginBottom:15,
     },
+    textTitle: {
+        fontSize: 22,
+        color: "white",
+        paddingBottom: 5,
+      },
+      container: {
+        paddingLeft: 15,
+        marginTop:10,
+      },
 });
 export default FoodHeaderComp
