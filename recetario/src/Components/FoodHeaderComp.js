@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     },
     Background:{
         backgroundColor:backgroundColor,
-        marginBottom:15,
+        paddingBottom:15,
     },
     textTitle: {
         fontSize: 22,

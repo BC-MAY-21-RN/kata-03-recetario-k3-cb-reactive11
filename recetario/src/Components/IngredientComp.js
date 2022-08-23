@@ -2,6 +2,7 @@ import React from 'react'
 import {  View, Text, Image,StyleSheet} from "react-native";
 
 
+
 const IngredientComp = ({name, quantity}) => {
   return (
 
@@ -24,6 +25,7 @@ const styles = StyleSheet.create({
           borderBottomWidth: .2, 
           marginBottom:12,
           marginHorizontal:15,
+          
     },
     text: {
         fontSize: 18,

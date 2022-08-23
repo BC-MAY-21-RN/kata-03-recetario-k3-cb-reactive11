@@ -2,6 +2,7 @@ import React from 'react'
 import {FlatList, View, Text, Image,StyleSheet,ScrollView} from "react-native";
 import IngredientComp from './IngredientComp'
 import recipes from "../../assets/data/recipes.json"
+import { backgroundColor } from '../constants/colors';
 
 
 const FoodDescripcion = () => {
@@ -15,7 +16,7 @@ const FoodDescripcion = () => {
         <Text style={styles.textTitle}>Ingredients</Text>
         <Text style={styles.textTitle}>for 3 servings</Text>
       </View>
-      <FlatList data={ingredients} renderItem={item} />
+      <FlatList data={ingredients} renderItem={item} style={styles.listBackground}/>
     </>
   )
 }
@@ -27,8 +28,12 @@ const styles = StyleSheet.create({
     },
     container:{
       paddingLeft:15,
-      marginBottom:10,
+      paddingBottom:10,
+      backgroundColor: backgroundColor,
     },
+    listBackground:{
+      backgroundColor: backgroundColor,
+    }
 })
 
 export default FoodDescripcion
