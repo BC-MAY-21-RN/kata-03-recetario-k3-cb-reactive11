@@ -1,10 +1,10 @@
-import {StyleSheet,ScrollView } from "react-native";
+import {StyleSheet,ScrollView, Pressable} from "react-native";
 import React from "react";
 import FoodComp from "./FoodComp";
 import Title from "./Title";
 import recipes from "../../assets/data/recipes.json"
 
-const ScrollComp = () => {
+const RecentComp = ({navigation}) => {
     
   return (
     <>
@@ -12,11 +12,13 @@ const ScrollComp = () => {
       <ScrollView horizontal={true} > 
         {recipes.map((data,key)=>{
             return(
-            <FoodComp 
-            link={data.photo} 
-            foodName={data.name}
-            size="big"
-            key={key}/>
+            <Pressable onPress={() => navigation.navigate('food') }>
+              <FoodComp 
+              link={data.photo} 
+              foodName={data.name}
+              size="big"
+              key={key}/>
+            </Pressable>
             )
         })}
         
@@ -28,4 +30,4 @@ const ScrollComp = () => {
 const styles = StyleSheet.create({
  
 });
-export default ScrollComp;
+export default RecentComp;
