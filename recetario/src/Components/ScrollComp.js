@@ -7,7 +7,7 @@ import recipes from "../../assets/data/recipes.json"
 const ScrollComp = ({navigation}) => {
   return (
     <>
-      <Title titulo="TRENDINGgg" />
+      <Title titulo="TRENDING" />
       <ScrollView horizontal={true} > 
         {recipes.map((data,key)=>{
             return(
