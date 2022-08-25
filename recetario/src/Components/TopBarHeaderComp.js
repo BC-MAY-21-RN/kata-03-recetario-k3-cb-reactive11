@@ -1,7 +1,6 @@
-import { View, Text, SafeAreaView, TextInput, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 import React from "react";
-import { FontAwesome, Feather, MaterialCommunityIcons,MaterialIcons } from "@expo/vector-icons";
-import { greyColor } from "../constants/colors";
+import { FontAwesome, MaterialCommunityIcons,MaterialIcons } from "@expo/vector-icons";
 
 const TopBarHeaderComp = ({navigation}) => {
   return (
@@ -26,7 +25,5 @@ const styles = StyleSheet.create({
   rightContainer:{
     flexDirection: "row",
   }
-  
-
 });
 export default TopBarHeaderComp;

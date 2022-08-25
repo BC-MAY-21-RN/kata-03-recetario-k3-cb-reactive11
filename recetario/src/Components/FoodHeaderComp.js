@@ -1,7 +1,5 @@
 import React from "react";
-import { ImageBackground, View, Text, Image,StyleSheet} from "react-native";
-import { FontAwesome } from "@expo/vector-icons";
-import FoodDescripcion from "./FoodDescripcion"; 
+import { ImageBackground, View, Text, StyleSheet} from "react-native";
 import TopBarHeaderComp from "./TopBarHeaderComp";
 import { backgroundColor,whiteColor } from "../constants/colors";
 

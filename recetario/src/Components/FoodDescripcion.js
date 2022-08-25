@@ -1,5 +1,5 @@
 import React from 'react'
-import {FlatList, View, Text, Image,StyleSheet,ScrollView} from "react-native";
+import {FlatList, View, Text, StyleSheet} from "react-native";
 import IngredientComp from './IngredientComp'
 import recipes from "../../assets/data/recipes.json"
 import { backgroundColor } from '../constants/colors';

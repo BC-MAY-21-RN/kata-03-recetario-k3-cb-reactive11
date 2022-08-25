@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, TextInput, StyleSheet } from "react-native";
+import { View, SafeAreaView, TextInput, StyleSheet } from "react-native";
 import React from "react";
 import { FontAwesome } from "@expo/vector-icons";
 import { greyColor } from "../constants/colors";
@@ -42,6 +42,5 @@ const styles = StyleSheet.create({
   lupa:{
     paddingTop: 5,
   }
-
 });
 export default SearchBar;

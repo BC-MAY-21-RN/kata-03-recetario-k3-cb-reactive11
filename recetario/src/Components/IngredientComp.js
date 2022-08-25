@@ -1,5 +1,5 @@
 import React from 'react'
-import {  View, Text, Image,StyleSheet} from "react-native";
+import {  View, Text, StyleSheet} from "react-native";
 
 
 
@@ -14,7 +14,6 @@ const IngredientComp = ({name, quantity}) => {
             {quantity}
         </Text>
       </View>
-   
   )
 }
 const styles = StyleSheet.create({
@@ -25,7 +24,6 @@ const styles = StyleSheet.create({
           borderBottomWidth: .2, 
           marginBottom:12,
           marginHorizontal:15,
-          
     },
     text: {
         fontSize: 18,

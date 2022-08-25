@@ -1,8 +1,7 @@
 import { View,StyleSheet} from 'react-native'
 import React from 'react'
 import SearchBar from '../Components/SearchBar'
-import ScrollComp from '../Components/ScrollComp'
-import RecentComp from '../Components/RecentComp'
+import HorizontalScrollComp from '../Components/HorizontalScrollComp'
 import { backgroundColor } from '../constants/colors'
 
 const HomeScreen = ({navigation}) => {
@@ -10,8 +9,8 @@ const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.container}> 
       <SearchBar />
-      <ScrollComp navigation={navigation}/>
-      <RecentComp navigation={navigation}/>  
+      <HorizontalScrollComp navigation={navigation} title="TRENDING" imageSize="small"/>
+      <HorizontalScrollComp navigation={navigation} title="RECENT" imageSize="BIG"/>
     </View>
   )
 }
