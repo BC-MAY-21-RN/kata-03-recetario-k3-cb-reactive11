@@ -1,11 +1,9 @@
 import React from "react";
 import { FlatList, View, Text, StyleSheet } from "react-native";
 import IngredientComp from "./IngredientComp";
-import recipes from "../../assets/data/recipes.json";
 import { backgroundColor } from "../constants/colors";
 
 const FoodDescripcion = ({ingredients}) => {
-  //const ingredients = recipes[0].ingredients;
   const renderItem = ({ item }) => (
     <IngredientComp name={item.name} quantity={item.quantity} />
   );

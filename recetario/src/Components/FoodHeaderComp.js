@@ -3,12 +3,12 @@ import { ImageBackground, View, Text, StyleSheet} from "react-native";
 import TopBarHeaderComp from "./TopBarHeaderComp";
 import { backgroundColor,whiteColor } from "../constants/colors";
 
-const FoodHeaderComp = ({navigation, image, name, title}) => {
+const FoodHeaderComp = ({navigation, image, name, title, fav}) => {
   return (
     <View style={styles.Background}>
         <ImageBackground source={{uri: image}}  resizeMode="cover">
         <View style={styles.image}>
-            <TopBarHeaderComp navigation={navigation}/>
+            <TopBarHeaderComp navigation={navigation} fav={fav}/>
             <Text style={styles.textType}>{title}</Text>
             <Text style={styles.textName}>{name}</Text>
         </View>

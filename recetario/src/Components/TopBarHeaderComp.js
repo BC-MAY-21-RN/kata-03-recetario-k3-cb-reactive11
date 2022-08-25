@@ -1,16 +1,17 @@
 import { View, StyleSheet } from "react-native";
-import React from "react";
-import { FontAwesome, MaterialCommunityIcons,MaterialIcons } from "@expo/vector-icons";
+import React, {useState} from "react";
+import { AntDesign, MaterialCommunityIcons,MaterialIcons } from "@expo/vector-icons";
 
-const TopBarHeaderComp = ({navigation}) => {
+const TopBarHeaderComp = ({navigation, fav}) => {
+  const [favorite, setFavorite] = useState(fav)
+  let icon = favorite? "heart" : "hearto"
   return (
       <View style={styles.container}>
-        
         <MaterialCommunityIcons  style={styles.lupa} name="window-close" size={30} color="white"
           onPress={() => navigation.goBack()}/>
         <View style={styles.rightContainer}>
             <MaterialIcons name="ios-share" size={26} color="white" style={{paddingRight:15}}/>
-            <FontAwesome name="heart-o" size={25} style={{paddingTop:3}} color="white"/>
+            <AntDesign name={icon} size={25} style={{paddingTop:3}} color="white" onPress={() => setFavorite(!favorite)}/>
         </View>
       </View>
   );

@@ -6,8 +6,6 @@ import recipes from "../../assets/data/recipes.json";
 const FoodScreen = ({ navigation, route }) => {
   const { foodId, title } = route.params;
   const food = recipes.find((k) => k.id == parseInt(foodId));
-
-  console.log(food);
   return (
     <>
       <FoodHeaderComp
@@ -15,6 +13,7 @@ const FoodScreen = ({ navigation, route }) => {
         image={food.photo}
         name={food.name}
         title={title}
+        fav={food.favorite}
       />
       <FoodDescripcion ingredients={food.ingredients} />
     </>

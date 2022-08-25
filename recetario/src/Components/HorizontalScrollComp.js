@@ -1,4 +1,4 @@
-import { ScrollView, Pressable, FlatList } from "react-native";
+import { Pressable, FlatList } from "react-native";
 import React from "react";
 import FoodComp from "./FoodComp";
 import Title from "./Title";

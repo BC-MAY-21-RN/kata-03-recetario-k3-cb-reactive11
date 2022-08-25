@@ -57,6 +57,7 @@
 		],
 		"name" : "Baked Chicken Chalupas",
 		"id": 1,
+		"favorite": true,
 		"photo": "https://img.freepik.com/free-photo/tortilla-wrap-with-falafel-fresh-salad-vegan-tacos-vegetarian-healthy-food_2829-6193.jpg",
 		"notes" : [],
 		"tags" : 
@@ -118,6 +119,7 @@
 		],
 		"name" : "Biscuits and Gravy",
 		"id": 2,
+		"favorite": false,
 		"photo" : "https://preppykitchen.com/wp-content/uploads/2021/09/Biscuits-Feature.jpg",
 		"notes" : [],
 		"tags" : 
@@ -196,6 +198,7 @@
 		],
 		"name" : "Black Bean Burgers",
 		"id": 3,
+		"favorite": true,
 		"photo" : "https://sallysbakingaddiction.com/wp-content/uploads/2018/07/best-black-bean-burgers-2.jpg",
 		"notes" : [],
 		"tags" : 
@@ -271,6 +274,7 @@
 		],
 		"name" : "Broccoli Chicken Stir Fry",
 		"id": 4,
+		"favorite": false,
 		"photo" : "https://www.dinneratthezoo.com/wp-content/uploads/2016/04/chicken-and-broccoli-stir-fry-6-2.jpg",
 		"notes" : [],
 		"tags" : 
