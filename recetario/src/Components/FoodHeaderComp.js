@@ -3,17 +3,13 @@ import { ImageBackground, View, Text, StyleSheet} from "react-native";
 import TopBarHeaderComp from "./TopBarHeaderComp";
 import { backgroundColor,whiteColor } from "../constants/colors";
 
-const FoodHeaderComp = ({navigation}) => {
-    let image ={uri:'https://img.freepik.com/free-photo/tortilla-wrap-with-falafel-fresh-salad-vegan-tacos-vegetarian-healthy-food_2829-6193.jpg' } 
-    let name = 'Peperoni Pizza'
-    let type = 'TRENDING'
+const FoodHeaderComp = ({navigation, image, name, title}) => {
   return (
     <View style={styles.Background}>
-        <ImageBackground source={image}  resizeMode="cover">
-       
+        <ImageBackground source={{uri: image}}  resizeMode="cover">
         <View style={styles.image}>
             <TopBarHeaderComp navigation={navigation}/>
-            <Text style={styles.textType}> {type} </Text>
+            <Text style={styles.textType}>{title}</Text>
             <Text style={styles.textName}>{name}</Text>
         </View>
         </ImageBackground> 

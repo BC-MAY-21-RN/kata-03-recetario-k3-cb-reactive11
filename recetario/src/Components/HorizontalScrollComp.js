@@ -6,7 +6,7 @@ import recipes from "../../assets/data/recipes.json";
 
 const ScrollComp = ({ navigation, title, imageSize }) => {
   const renderItem = ({ item }) => (
-    <Pressable onPress={() => navigation.navigate('food')}>
+    <Pressable onPress={() => navigation.navigate('food', {foodId: item.id, title:title})}>
       <FoodComp link={item.photo} foodName={item.name} size={imageSize} />
     </Pressable>
   );
@@ -14,6 +14,7 @@ const ScrollComp = ({ navigation, title, imageSize }) => {
     <>
       <Title titulo={title} />
       <FlatList
+        showsHorizontalScrollIndicator={false}
         horizontal
         data={recipes}
         renderItem={renderItem}
