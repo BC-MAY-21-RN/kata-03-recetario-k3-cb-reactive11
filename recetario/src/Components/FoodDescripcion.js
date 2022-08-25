@@ -4,9 +4,9 @@ import IngredientComp from "./IngredientComp";
 import recipes from "../../assets/data/recipes.json";
 import { backgroundColor } from "../constants/colors";
 
-const FoodDescripcion = () => {
-  const ingredients = recipes[0].ingredients;
-  const item = ({ item }) => (
+const FoodDescripcion = ({ingredients}) => {
+  //const ingredients = recipes[0].ingredients;
+  const renderItem = ({ item }) => (
     <IngredientComp name={item.name} quantity={item.quantity} />
   );
 
@@ -18,7 +18,7 @@ const FoodDescripcion = () => {
       </View>
       <FlatList
         data={ingredients}
-        renderItem={item}
+        renderItem={renderItem}
         style={styles.listBackground}
         keyExtractor={(item) => item.id}
       />

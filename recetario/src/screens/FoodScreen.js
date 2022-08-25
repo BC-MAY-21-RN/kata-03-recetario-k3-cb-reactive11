@@ -16,7 +16,7 @@ const FoodScreen = ({ navigation, route }) => {
         name={food.name}
         title={title}
       />
-      <FoodDescripcion />
+      <FoodDescripcion ingredients={food.ingredients} />
     </>
   );
 };
