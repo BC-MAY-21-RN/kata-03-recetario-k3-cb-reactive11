@@ -1,8 +1,6 @@
 import React from 'react'
 import {  View, Text, StyleSheet} from "react-native";
 
-
-
 const IngredientComp = ({name, quantity}) => {
   return (
 
@@ -16,6 +14,7 @@ const IngredientComp = ({name, quantity}) => {
       </View>
   )
 }
+
 const styles = StyleSheet.create({
     container: {
         flexDirection: "row",
