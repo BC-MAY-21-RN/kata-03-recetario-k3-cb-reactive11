@@ -3,7 +3,7 @@ import { ImageBackground, View, Text, StyleSheet} from "react-native";
 import TopBarHeaderComp from "./TopBarHeaderComp";
 import { backgroundColor,whiteColor } from "../constants/colors";
 
-const FoodHeaderComp = ({navigation, image, name, title, fav}) => {
+const FoodHeaderComp = ({navigation, image, name, title, fav,views}) => {
   return (
     <View style={styles.Background}>
         <ImageBackground source={{uri: image}}  resizeMode="cover">
@@ -11,6 +11,7 @@ const FoodHeaderComp = ({navigation, image, name, title, fav}) => {
             <TopBarHeaderComp navigation={navigation} fav={fav}/>
             <Text style={styles.textType}>{title}</Text>
             <Text style={styles.textName}>{name}</Text>
+            <Text style={styles.textViews}>Views: {views}</Text>
         </View>
         </ImageBackground> 
     </View>
@@ -27,7 +28,14 @@ const styles = StyleSheet.create({
         fontSize: 35,
         color: whiteColor,
         paddingLeft:15,
-        paddingBottom:30,
+    },
+    viewsCont:{
+      flexDirection:'row',
+    },
+    textViews:{
+      fontSize: 15,
+      color: whiteColor,
+     paddingLeft:325
     },
     image:{
         backgroundColor:"#000000c0"

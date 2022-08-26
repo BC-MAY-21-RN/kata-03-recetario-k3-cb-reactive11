@@ -64,7 +64,8 @@
 		[
 			"Dinner",
 			"Safe"
-		]
+		],
+		"views": 4
 	},
 	{
 		"ingredients" : 
@@ -128,7 +129,8 @@
 			"Safe",
 			"Side",
 			"Vegetarian"
-		]
+		],
+		"views": 6
 	},
 	{
 		"ingredients" : 
@@ -205,7 +207,8 @@
 		[
 			"Comfort",
 			"Dinner"
-		]
+		],
+		"views": 10
 	},
 	{
 		"ingredients" : 
@@ -282,6 +285,7 @@
 			"Asian",
 			"Dinner",
 			"Safe"
-		]
+		],
+		"views": 2
 	}
 ]

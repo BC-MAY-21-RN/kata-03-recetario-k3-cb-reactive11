@@ -14,6 +14,7 @@ const FoodScreen = ({ navigation, route }) => {
         name={food.name}
         title={title}
         fav={food.favorite}
+        views={food.views}
       />
       <FoodDescripcion ingredients={food.ingredients} />
     </>
